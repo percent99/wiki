@@ -1,0 +1,7 @@
+site_name: 99PERCENT Notebook
+theme:
+  name: material
+nav:
+  - 홈: index.md
+  - Test:
+    - Note: note.md
