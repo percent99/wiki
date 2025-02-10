@@ -1,7 +1,47 @@
 site_name: 99PERCENT Notebook
 theme:
   name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    # - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - glightbox
 nav:
-  - 홈: index.md
-  - Test:
-    - Note: note.md
+  - Home: 
+    - index.md
+  - 지식창고:
+    - 'Linux':
+      - '명령어':
+        - 'scp': 'linux/scp.md'
+extra:
+  generator: false
