@@ -3,6 +3,7 @@ nav:
   - Home: 
     - index.md
   - 지식창고:
+    - 'linux/index.md'
     - 'Linux':
       - '명령어':
         - 'scp': 'linux/scp.md'
@@ -16,7 +17,8 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
-    # - toc.integrate
+    - navigation.expand
+    - toc.integrate
     - content.code.copy
     - content.code.annotate
 markdown_extensions:
