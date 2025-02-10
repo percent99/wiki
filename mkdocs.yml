@@ -1,4 +1,12 @@
 site_name: 99PERCENT Notebook
+nav:
+  - Home: 
+    - index.md
+  - 지식창고:
+    - 'Linux':
+      - '명령어':
+        - 'scp': 'linux/scp.md'
+        - 'tar': 'linux/tar.md'
 theme:
   name: material
   language: ko
@@ -36,12 +44,5 @@ markdown_extensions:
       custom_checkbox: true
 plugins:
   - glightbox
-nav:
-  - Home: 
-    - index.md
-  - 지식창고:
-    - 'Linux':
-      - '명령어':
-        - 'scp': 'linux/scp.md'
 extra:
   generator: false
