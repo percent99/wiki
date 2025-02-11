@@ -2,15 +2,17 @@ site_name: 99PERCENT Notebook
 nav:
   - Home: index.md
   - Linux: 
+    - Overview: 'linux/index.md'
     - 'Command Line': 
       - 'linux/command/index.md'
-      - 'scp': 'linux/command/scp.md'
-      - 'tar': 'linux/command/tar.md'
+      - 'linux/command/scp.md'
+      - 'linux/command/tar.md'
   - Javascript: ''
 
 # Configuration
 theme:
   name: material
+  custom_dir: docs/overrides
   language: ko
   features:
     - announce.dismiss

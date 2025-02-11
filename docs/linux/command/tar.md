@@ -1,3 +1,7 @@
+---
+title: tar
+icon: material/bash
+---
 
 보통 리눅스에서 파일을 압축 파일을 다룰 때, "tar로 압축(compress)한다"는 표현을 쓰는 경우가 많은데,  
 정확히 말하자면 tar 자체는 "데이터의 크기를 줄이기 위한 파일 압축"을 수행하지 않는다.  
@@ -14,64 +18,64 @@ tar가 널리 쓰이게 된 이유 중 한 가지는, 단순 아카이버 기능
   * `-v` : 처리되는 과정을 나열
   * `-f` : 대상 tar 아카이브 지정 (기본 옵션)
 
-  > tar압축
+    > tar압축
 
-  ``` bash
-  $ tar -cvf [파일명.tar] [폴더명]
-  ```
-  ``` bash
-  $ tar -cvf test.tar test_folder
-  ```
+    ``` bash
+    $ tar -cvf [파일명.tar] [폴더명]
+    ```
+    ``` bash
+    $ tar -cvf test.tar test_folder
+    ```
 
-  > tar.gz 압축
+    > tar.gz 압축
 
-  ``` bash
-  $ tar -zcvf [파일명.tar.gz] [폴더명]
-  ```
-  ``` bash
-  $ tar -zcvf test.tar.gz test_folder
-  ```
+    ``` bash
+    $ tar -zcvf [파일명.tar.gz] [폴더명]
+    ```
+    ``` bash
+    $ tar -zcvf test.tar.gz test_folder
+    ```
 
-  > zip 압축
+    > zip 압축
 
-  ``` bash
-  $ zip [파일명.zip] [폴더명]
-  ```
-  ``` bash title="현재 폴더의 전체를 압축"
-  $ zip test.zip ./*
-  ```
-  ``` bash title="현재 폴더의 모든 것과 현재 폴더의 하위 폴더들까지 모두 압축"
-  $ zip test.zip -r ./*
-  ```
+    ``` bash
+    $ zip [파일명.zip] [폴더명]
+    ```
+    ``` bash title="현재 폴더의 전체를 압축"
+    $ zip test.zip ./*
+    ```
+    ``` bash title="현재 폴더의 모든 것과 현재 폴더의 하위 폴더들까지 모두 압축"
+    $ zip test.zip -r ./*
+    ```
 
 ### 2. 압축 해제 하기
   * `-x` : extract, tar 아카이브에서 파일 추출 
   * `-v` : 처리 되는 과정을 나열
   * `-f` : 대상 tar 아카이브 지정 (기본 옵션)
 
-  > tar 압축 해제
+    > tar 압축 해제
 
-  ``` bash
-  $ tar -xvf [파일명.tar]
-  ```
+    ``` bash
+    $ tar -xvf [파일명.tar]
+    ```
 
-  > tar.gz 압축 해제
+    > tar.gz 압축 해제
 
-  ``` bash
-  $ tar -zxvf [파일명.tar.gz]
-  ```
-  ``` bash
-  $ tar -zxvf test.tar.gz
-  ```
+    ``` bash
+    $ tar -zxvf [파일명.tar.gz]
+    ```
+    ``` bash
+    $ tar -zxvf test.tar.gz
+    ```
 
-  > zip 압축 해제
+    > zip 압축 해제
 
-  ``` bash
-  $ unzip [파일명.zip]
-  ```
-  ``` bash
-  $ unzip test.zip
-  ```
-  ``` bash title="특정 폴더에 압축 해제"
-  $ unzip test.zip -d ./target_folder
-  ```
+    ``` bash
+    $ unzip [파일명.zip]
+    ```
+    ``` bash
+    $ unzip test.zip
+    ```
+    ``` bash title="특정 폴더에 압축 해제"
+    $ unzip test.zip -d ./target_folder
+    ```
