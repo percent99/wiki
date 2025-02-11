@@ -5,7 +5,7 @@ nav:
     - 'os/index.md'
     - Linux: 
       - 'os/linux/index.md'
-      - CRON: ''
+      - CRON: 'os/linux/cron.md'
       - Command Line: 
         - 'os/linux/command/scp.md'
         - 'os/linux/command/tar.md'
@@ -97,6 +97,9 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # Additional configuration
 extra:
