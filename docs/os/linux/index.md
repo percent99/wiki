@@ -1,5 +1,6 @@
 ---
 title: Linux
+icon: simple/linux
 ---
 
-# Linux 자료공간
+# 

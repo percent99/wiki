@@ -1,13 +1,22 @@
 site_name: 99PERCENT Notebook
 nav:
   - Home: index.md
-  - Linux: 
-    - Overview: 'linux/index.md'
-    - 'Command Line': 
-      - 'linux/command/index.md'
-      - 'linux/command/scp.md'
-      - 'linux/command/tar.md'
-  - Javascript: ''
+  - OS: 
+    - 'os/index.md'
+    - Linux: 
+      - 'os/linux/index.md'
+      - CRON: ''
+      - Command Line: 
+        - 'os/linux/command/scp.md'
+        - 'os/linux/command/tar.md'
+    - Mac: 
+      - 'os/mac/index.md'
+    - Windows: 
+      - 'os/windows/index.md'
+  - Language: 
+    - 'language/index.md'
+    - React: 'language/react/index.md'
+    - React-Native: 'language/react-native/index.md'
 
 # Configuration
 theme:
@@ -25,8 +34,8 @@ theme:
     - navigation.indexes
     - navigation.footer
     - navigation.sections
-    - navigation.tabs
     # - navigation.tabs.sticky
+    - navigation.tabs
     - navigation.top
     - search.highlight
     - search.share
