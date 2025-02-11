@@ -1,26 +1,68 @@
 site_name: 99PERCENT Notebook
 nav:
-  - Home: 
-    - index.md
-  - 지식창고:
-    - 'linux/index.md'
-    - 'Linux':
-      - '명령어':
-        - 'scp': 'linux/scp.md'
-        - 'tar': 'linux/tar.md'
+  - Home: index.md
+  - Linux: 
+    - 'Command Line': 
+      - 'linux/command/index.md'
+      - 'scp': 'linux/command/scp.md'
+      - 'tar': 'linux/command/tar.md'
+  - Javascript: ''
+
+# Configuration
 theme:
   name: material
   language: ko
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - navigation.expand
-    - toc.integrate
-    - content.code.copy
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Plugins
+plugins:
+  - glightbox
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -44,7 +86,10 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-plugins:
-  - glightbox
+
+# Additional configuration
 extra:
   generator: false
+  status:
+    new: Recently added
+    deprecated: Deprecated
