@@ -31,8 +31,10 @@ theme:
     - content.code.copy
     - content.tooltips
     # - navigation.expand
-    - navigation.indexes
     - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     # - navigation.tabs.sticky
     - navigation.tabs
