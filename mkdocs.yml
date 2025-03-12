@@ -17,6 +17,9 @@ nav:
     - 'language/index.md'
     - React: 'language/react/index.md'
     - React-Native: 'language/react-native/index.md'
+  - Archives:
+    - archives/index.md
+    - 노트정리 방법: 'archives/note-organization-guide.md'
 
 # Configuration
 theme:
